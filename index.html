@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>PAC_Desarrollo_UF2_Diseño de Interfaces Web</title>
+  </head>
+  <body>
+    <div class="container">
+      <script src="index.js"></script>
+      <div class="div-titulo">
+        <h1>Carrera de Interfaces</h1>
+      </div>
+
+      <div class="div-main">
+        <label for="participantes">Drivers: </label>
+        <select name="participantes" id="participantes">
+          <option disabled selected value="">Nº</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <div class="loader">
+          <div class="circle"></div>
+        </div>
+        <button class="button" id="start">Start</button>
+        <button class="button" id="restart">Restart</button>
+      </div>
+
+      <div class="div-results" id="div-results">
+        <table id="table-results">
+          <tr>
+            <th>Position</th>
+            <th>Car</th>
+            <th>Driver</th>
+          </tr>
+        </table>
+      </div>
+      <div class="div-race" id="race">
+        <div id="race-position" class="race-position"></div>
+      </div>
+
+      <footer>
+        <p>Ilerna Online - DAW - Diseño de Interfaces Web - José Luis Vásquez Drouet</p>
+      </footer>
+    </div>
+  </body>
+</html>
